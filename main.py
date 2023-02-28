@@ -31,8 +31,6 @@ def fetch_random_lyrics(username):
     lyrics = fetch_lyrics(name, artist).split("\n")
     return random.choice(lyrics)
 
-
-
 def main():
     lyrics = fetch_random_lyrics(config["username"])
     print(lyrics)
