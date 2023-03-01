@@ -1,5 +1,3 @@
-README.md
-
 # random-spotify-lyrics
 Grabs a random song from your recent streams on stats.fm and gets a random lyrics line of it.
 Stats.fm is a website that shows your recent streams on spotify, it's not affiliated with spotify in any way.
