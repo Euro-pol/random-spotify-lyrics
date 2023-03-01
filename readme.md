@@ -1,23 +1,28 @@
-# random-spotify-lyrics  
-Grabs a random song from your recent streams on stats.fm and gets a random lyrics line of it
+# random-spotify-lyrics
+Grabs a random song from your recent streams on stats.fm and gets a random lyrics line of it.
+Stats.fm is a website that shows your recent streams on spotify, it's not affiliated with spotify in any way.
 
-## Why  
-You can integrate this in a flask server or wtv and put it on your website
+## Why?
+You can integrate this in a flask server and make a website that shows random lyrics from your recent streams, or you can just run it in a cronjob and get a random lyrics line every 5 minutes.
 
-## How to  
-1. Login to stats.fm and get your username (you can do it in network tab and refresh page)  
-2. Sign up for a free Musixmatch key  
-3. Put both in config.json  
+Or you can just run it once and get a random lyrics line.
 
-## Requirements  
-```pip install requests```  
+## How to use
+1. Login to [stats.fm](https://stats.fm/) and get your username.
+2. Sign up for a free [Musixmatch key](https://developer.musixmatch.com/) and get your key.
+3. Put both in `config.json`.
 
-## Example  
+## Requirements
+- Python 3.6+
+```bash
+pip install -r requirements.txt
+```
+
+## Example
 ```
 [user@archlinux lyrics]$ python main.py
 Fetching lyrics for Hate Me! by MASN
 Tell me all that brings you grace
-
 [user@archlinux lyrics]$ python main.py
 Fetching lyrics for Sunset by LUCKI
 Can't sip Sprite with the Hi-Tech, ayy
