@@ -19,8 +19,7 @@ def fetch_random_song_lyrics(username):
     name = song["track"]["name"]
     artist = song["track"]["artists"][0]["name"]
     print(f"Fetching lyrics for {name} by {artist}")
-    lyrics = fetch_lyrics(name, artist)
-    return lyrics
+    return fetch_lyrics(name, artist)
 
 def fetch_random_lyrics(username):
     songs = fetch_streams(username)
